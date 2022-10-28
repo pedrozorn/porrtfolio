@@ -1,16 +1,21 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Profile from "../views/Profile.vue";
-import Gallery from "../views/Gallery.vue";
-import Skills from "../views/Skills.vue";
-import Blogs from "../views/Blogs.vue";
+import Profile from "../components/Profile.vue";
+import Gallery from "../components/Gallery.vue";
+import Skills from "../components/Skills.vue";
+import Blogs from "../components/Blogs.vue";
+import Home from "../components/Home.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-
+    name: "Home",
+    component: Home,
+  },
+  {
+    path: "/profile",
     name: "Profile",
     component: Profile,
   },

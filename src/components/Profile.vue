@@ -1,6 +1,6 @@
 <template>
   <div id="profile_container">
-    <img id="profile_img" src="" alt="test" />
+    <img id="profile_img" src="../../src/assets/xxp.png" alt="prof" />
     <h2>名前</h2>
     <div id="profile_description">
       <p class="profile_text">
@@ -56,11 +56,11 @@ export default {
       this.Age = age;
     },
     InitPosition() {
-      let grade = this.Age + -21;
+      let grade = this.Age + -19;
       if (grade < 1) {
         this.Position = "大学" + (4 - grade) + "年生";
       } else {
-        this.Position = "社会人" + grade + "年目";
+        this.Position = "音楽作成歴" + grade + "年目";
       }
     },
   },
