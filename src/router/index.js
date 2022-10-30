@@ -3,7 +3,6 @@ import VueRouter from "vue-router";
 import Profile from "../components/Profile.vue";
 import Gallery from "../components/Gallery.vue";
 import Skills from "../components/Skills.vue";
-import Blogs from "../components/Blogs.vue";
 import Home from "../components/Home.vue";
 
 Vue.use(VueRouter);
@@ -28,11 +27,6 @@ const routes = [
     path: "/skills",
     name: "Skills",
     component: Skills,
-  },
-  {
-    path: "/blogs",
-    name: "Blogs",
-    component: Blogs,
   },
 ];
 
