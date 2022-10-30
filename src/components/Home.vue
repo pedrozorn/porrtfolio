@@ -1,3 +1,19 @@
 <template>
-  <div id="home">明日はここからやること</div>
+  <section class="home">
+    <HomeHero></HomeHero>
+  </section>
 </template>
+
+<script>
+import HomeHero from "./HomeHero.vue";
+export default {
+  components: {
+    HomeHero,
+  },
+};
+</script>
+<style lang="scss" scoped>
+.home {
+  padding-bottom: 50px;
+}
+</style>

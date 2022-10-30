@@ -14,7 +14,7 @@
     <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list nav dense>
         <v-list-item-group>
-          <v-list-item v-for="menuItem in menuItems" :key="menuItem">
+          <v-list-item v-for="menuItem in menuItems" :key="menuItem.name">
             <v-list-item-title>{{ menuItem.name }}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>

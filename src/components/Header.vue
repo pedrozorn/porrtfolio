@@ -9,8 +9,8 @@
 export default {
   data() {
     return {
-      title: "Header",
-      text: "ヘッダーテスト",
+      title: "Footer",
+      text: "フッターテスト",
     };
   },
 };
