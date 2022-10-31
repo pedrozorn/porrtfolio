@@ -2,7 +2,7 @@
   <header>
     <v-app-bar app primary>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title>SEIRONxx Music collection</v-toolbar-title>
+      <v-toolbar-title>SEIRONxxP Portfolio</v-toolbar-title>
       <v-tabs primary>
         <v-tab
           v-for="menuItem in menuItems"
