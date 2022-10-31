@@ -2,7 +2,7 @@
   <v-app>
     <AppHeader></AppHeader>
     <v-content>
-      <Home>aa</Home>
+      <router-view></router-view>
     </v-content>
     <AppFooter></AppFooter>
   </v-app>
@@ -10,14 +10,12 @@
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import Home from "./components/Home.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: "App",
   components: {
     AppHeader,
-    Home,
     AppFooter,
   },
 };

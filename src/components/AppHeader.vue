@@ -3,18 +3,24 @@
     <v-app-bar app primary>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>SEIRONxx Music collection</v-toolbar-title>
-      <template v-slot:extension>
-        <v-tabs align-with-title>
-          <v-tab>Tab 1</v-tab>
-          <v-tab>Tab 2</v-tab>
-          <v-tab>Tab 3</v-tab>
-        </v-tabs>
-      </template>
+      <v-tabs primary>
+        <v-tab
+          v-for="menuItem in menuItems"
+          :key="menuItem.name"
+          :to="menuItem.url"
+        >
+          {{ menuItem.name }}
+        </v-tab>
+      </v-tabs>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list nav dense>
         <v-list-item-group>
-          <v-list-item v-for="menuItem in menuItems" :key="menuItem.name">
+          <v-list-item
+            v-for="menuItem in menuItems"
+            :key="menuItem.name"
+            :to="menuItem.url"
+          >
             <v-list-item-title>{{ menuItem.name }}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
