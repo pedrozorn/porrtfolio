@@ -16,10 +16,27 @@
             <p>画像でyoutube飛ばす</p>
           </v-col>
         </v-row>
+        <AppButton :button-text="buttonText" :url="url" />
       </v-container>
     </div>
   </section>
 </template>
+
+<script>
+import AppButton from "./AppButton.vue";
+export default {
+  data() {
+    return {
+      buttonText: "ページごとに変更可能",
+      url: "/about",
+    };
+  },
+  components: {
+    AppButton,
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .home-about__contents {
   margin-top: 20px;
