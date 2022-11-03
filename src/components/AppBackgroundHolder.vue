@@ -14,14 +14,14 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
-<style  lang="scss" scoped>
+<style lang="scss" scoped>
 .background-holder__content {
-  background: url("../assets/img/home-hero.png");
+  background: url("../assets/back.jpg");
   background-size: cover;
   background-position: center center;
   width: 100%;
