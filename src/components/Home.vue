@@ -2,16 +2,19 @@
   <section class="home">
     <HomeHero></HomeHero>
     <HomeAbout></HomeAbout>
+    <HomeWork />
   </section>
 </template>
 
 <script>
 import HomeHero from "./HomeHero.vue";
 import HomeAbout from "./HomeAbout.vue";
+import HomeWork from "./HomeWork.vue";
 export default {
   components: {
     HomeHero,
     HomeAbout,
+    HomeWork,
   },
 };
 </script>
