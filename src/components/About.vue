@@ -1,8 +1,28 @@
 <template>
-  <section class="about">
+  <div class="about bg">
     <AppBackgroundHolder :title="title" />
-    <h2>プロフィール</h2>
-  </section>
+    <section class="home-about">
+      <div class="section__title">
+        <div class="section__title-text">
+          sample... Aklo count on me feat.zorn(the darkness)
+        </div>
+        <v-container>
+          <v-row class="home-about__contents">
+            <v-col md="5" class="home-about__contents-img">
+              <img src="../assets/xxp.png" alt="" class="img-fluid" />
+            </v-col>
+            <v-col md="5" class="home-about__contents-text">
+              <p>正論xxpです。</p>
+              <p>説明文ほげほげ</p>
+              <p>ツイッターのリンク貼る</p>
+              <p>画像でyoutube飛ばす</p>
+            </v-col>
+          </v-row>
+          <AppButton :button-text="buttonText" :url="url" />
+        </v-container>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
