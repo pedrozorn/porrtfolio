@@ -6,7 +6,7 @@
 </template>
 <style lang="scss" scoped>
 .container-background {
-  background: url("../assets/back.jpg");
+  background: url("../assets/bg.png");
   background-size: cover;
   background-position: center center;
   width: 100%;

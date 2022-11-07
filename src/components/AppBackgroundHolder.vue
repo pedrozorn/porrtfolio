@@ -37,7 +37,7 @@ export default {
 }
 
 .befbackground-holder__content {
-  background: url("../assets/back.jpg");
+  background: url("../assets/bg.png");
   background-size: cover;
   background-position: center center;
   width: 100%;

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <v-app-bar app primary>
+    <v-app-bar app dark color="secondary">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>SEIRONxxP Portfolio</v-toolbar-title>
       <v-tabs primary>
