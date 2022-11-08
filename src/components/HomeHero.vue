@@ -3,8 +3,7 @@
     <v-container fluid fill-height class="home_hero__content">
       <v-row>
         <v-col class="home_hero__content-text">
-          <p>seironxxP website.</p>
-          <p>music producer</p>
+          <p>nora/正論××P website.</p>
         </v-col>
       </v-row>
     </v-container>
@@ -21,7 +20,7 @@
     height: 100vh;
   }
   &-text {
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 28px;
     font-weight: bold;
