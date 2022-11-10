@@ -1,13 +1,14 @@
 <template>
-  <header>
-    <v-app-bar class="header-menu" app dark color="secondary">
-      <img class="inline-block header-img" src="../assets/img/xxp.png" />
+  <header class="header-menu">
+    <v-app-bar app dark color="secondary">
+      <img class="header-img" src="../assets/img/xxp.png" />
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-tabs class="test" secondary>
+      <v-tabs secondary>
         <v-tab
           v-for="menuItem in menuItems"
           :key="menuItem.name"
           :to="menuItem.url"
+          :class="[menuItem.name == 'HOME' ? 'top-tab' : 'other-tab']"
         >
           {{ menuItem.name }}
         </v-tab>
@@ -21,9 +22,7 @@
             :key="menuItem.name"
             :to="menuItem.url"
           >
-            <v-list-item-title>
-              {{ menuItem.name }}
-            </v-list-item-title>
+            <v-list-item-title>{{ menuItem.name }}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -67,6 +66,9 @@ v.toolbar_title {
 .test {
   display: flex;
   justify-content: flex-end;
+}
+.top-tab {
+  margin-left: auto;
 }
 .header-img {
   display: inline-block;
