@@ -11,8 +11,8 @@ export default {
             url: '/profile'
         },
         {
-            name: 'WORK',
-            url: '/work'
+            name: 'MOVIE',
+            url: '/moive'
         },
         {
             name: 'SERVICE',

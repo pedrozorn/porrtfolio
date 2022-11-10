@@ -8,7 +8,11 @@
           v-for="menuItem in menuItems"
           :key="menuItem.name"
           :to="menuItem.url"
-          :class="[menuItem.name == 'HOME' ? 'top-tab' : 'other-tab']"
+          :class="[
+            menuItem.name == 'HOME'
+              ? 'top-tab link-menu'
+              : 'other-tab link-menu',
+          ]"
         >
           {{ menuItem.name }}
         </v-tab>
@@ -70,6 +74,10 @@ v.toolbar_title {
 .top-tab {
   margin-left: auto;
 }
+.link-menu {
+  font-size: 20px;
+  font-weight: 600;
+}
 .header-img {
   display: inline-block;
   height: 30px;
@@ -82,5 +90,6 @@ v.toolbar_title {
 .header-menu {
   display: flex;
   justify-content: flex-end;
+  font-size: 45px;
 }
 </style>

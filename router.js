@@ -2,7 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "/src/components/Home.vue";
 import About from "/src/components/Profile.vue";
-import Work from "/src/components/Work.vue";
+import Movie from "/src/components/Movie.vue";
 import Service from "/src/components/Service.vue";
 Vue.use(Router);
 export default new Router({
@@ -18,9 +18,9 @@ export default new Router({
       component: About,
     },
     {
-      path: "/work",
-      name: "work",
-      component: Work,
+      path: "/moive",
+      name: "moive",
+      component: Movie,
     },
     {
       path: "/service",

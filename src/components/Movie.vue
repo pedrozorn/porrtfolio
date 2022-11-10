@@ -1,19 +1,14 @@
 <template>
-  <section class="work">
+  <div class="movie bg">
     <AppBackgroundHolder :title="title" />
-    <div id="work-1">
-      <h2>Work--1</h2>
-      <p>xxxxx</p>
-    </div>
-    <div id="work-2">
-      <h2>Work--2</h2>
-      <p>xxxxx</p>
-    </div>
-    <div id="work-3">
-      <h2>Work--3</h2>
-      <p>xxxxx</p>
-    </div>
-  </section>
+    <v-container fluid class="red darken-4">
+      <v-row justify="center">
+        <v-col v-for="n of 8" :key="n" cols="12" sm="10" md="6" lg="6" xl="3">
+          <v-card height="400"></v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 <script>
 import AppBackgroundHolder from "./AppBackgroundHolder.vue";
@@ -21,7 +16,7 @@ import AppBackgroundHolder from "./AppBackgroundHolder.vue";
 export default {
   data() {
     return {
-      title: "Work",
+      title: "Movie",
     };
   },
   components: {
