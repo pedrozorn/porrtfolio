@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "/src/components/Home.vue";
-import About from "/src/components/About.vue";
+import About from "/src/components/Profile.vue";
 import Work from "/src/components/Work.vue";
 import Service from "/src/components/Service.vue";
 Vue.use(Router);
@@ -13,8 +13,8 @@ export default new Router({
       component: Home,
     },
     {
-      path: "/about",
-      name: "about",
+      path: "/profile",
+      name: "profile",
       component: About,
     },
     {

@@ -7,8 +7,8 @@ export default {
             url: '/'
         },
         {
-            name: 'ABOUT',
-            url: '/about'
+            name: 'Profile',
+            url: '/profile'
         },
         {
             name: 'WORK',
