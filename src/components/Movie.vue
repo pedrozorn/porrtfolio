@@ -1,22 +1,34 @@
 <template>
   <div class="movie bg">
     <AppBackgroundHolder :title="title" />
-    <v-container fluid class="red darken-4">
-      <v-row justify="center">
-        <v-col v-for="n of 8" :key="n" cols="12" sm="10" md="6" lg="6" xl="3">
-          <v-card height="400"></v-card>
-        </v-col>
-      </v-row>
+    <v-container class="responsive-style">
+      <iframe
+        v-for="movie in movieList"
+        :key="movie.name"
+        width="560"
+        height="315"
+        class="addTagManager"
+        :src="movie.url"
+        :title="movie.name"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </v-container>
+    <v-pagination v-model="page" :length="3"></v-pagination>
   </div>
 </template>
+
 <script>
 import AppBackgroundHolder from "./AppBackgroundHolder.vue";
+import movie from "../common/movie";
 
 export default {
   data() {
     return {
       title: "Movie",
+      page: 1,
+      movieList: movie.movieList,
     };
   },
   components: {
@@ -25,13 +37,20 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-#work-1 {
-  height: 1000px;
+.frame-youtube {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 50%;
 }
-#work-2 {
-  height: 1000px;
+.frame-youtube iframe {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 50%;
 }
-#work-3 {
-  height: 1000px;
+.addTagManager {
+  padding: 1px;
+  margin: 1px;
 }
 </style>

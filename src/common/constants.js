@@ -15,8 +15,8 @@ export default {
             url: '/moive'
         },
         {
-            name: 'SERVICE',
-            url: '/service'
+            name: 'News',
+            url: '/news'
         },
         {
             name: 'BLOG',

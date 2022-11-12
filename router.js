@@ -3,7 +3,7 @@ import Router from "vue-router";
 import Home from "/src/components/Home.vue";
 import About from "/src/components/Profile.vue";
 import Movie from "/src/components/Movie.vue";
-import Service from "/src/components/Service.vue";
+import News from "/src/components/News.vue";
 Vue.use(Router);
 export default new Router({
   routes: [
@@ -23,9 +23,9 @@ export default new Router({
       component: Movie,
     },
     {
-      path: "/service",
-      name: "service",
-      component: Service,
+      path: "/news",
+      name: "news",
+      component: News,
     },
   ],
   scrollBehavior(to) {
