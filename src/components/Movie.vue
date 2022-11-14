@@ -1,20 +1,22 @@
 <template>
   <div class="movie bg">
     <AppBackgroundHolder :title="title" />
-    <v-container class="responsive-style">
-      <iframe
-        v-for="movie in movieList"
-        :key="movie.name"
-        width="560"
-        height="315"
-        class="addTagManager"
-        :src="movie.url"
-        :title="movie.name"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </v-container>
+    <div class="container">
+      <v-container class="responsive-style">
+        <iframe
+          v-for="movie in movieList"
+          :key="movie.name"
+          width="560"
+          height="315"
+          class="addTagManager"
+          :src="movie.url"
+          :title="movie.name"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </v-container>
+    </div>
     <v-pagination v-model="page" :length="3"></v-pagination>
   </div>
 </template>

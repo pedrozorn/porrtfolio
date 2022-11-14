@@ -10,13 +10,13 @@ export default {
       name: 'STaRBRiGHT',
       url: 'https://www.youtube.com/embed/RzHdZB87Hak'
     },
-    {
-      name: 'endlessHall',
-      url: 'https://www.youtube.com/embed/s8xyjQd0x-U'
-    },
-    {
-      name: 'antihero',
-      url: 'https://www.youtube.com/embed/MTUNfuojCwg'
-    },
+    // {
+    //   name: 'endlessHall',
+    //   url: 'https://www.youtube.com/embed/s8xyjQd0x-U'
+    // },
+    // {
+    //   name: 'antihero',
+    //   url: 'https://www.youtube.com/embed/MTUNfuojCwg'
+    // },
   ],
 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="home-hero">
+  <section class="home-hero bg">
     <v-container fluid fill-height class="home_hero__content">
       <v-row>
         <v-col class="home_hero__content-text">
@@ -11,7 +11,6 @@
 </template>
 <style lang="scss" scoped>
 .home_hero__content {
-  background-image: url("../assets/bg.png");
   background-size: cover;
   background-position: center center;
   width: 100%;

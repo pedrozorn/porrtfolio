@@ -1,19 +1,19 @@
 <template>
-  <div id="app">
-    <v-app id="inspire">
-      <div class="text-center">
-        <v-pagination v-model="page" :length="6"></v-pagination>
-      </div>
-    </v-app>
+  <div class="news bg" id="app">
+    <AppBackgroundHolder :title="title" />
   </div>
 </template>
 <script>
+import AppBackgroundHolder from "./AppBackgroundHolder.vue";
 export default {
   data() {
     return {
       title: "News",
       page: 1,
     };
+  },
+  components: {
+    AppBackgroundHolder,
   },
 };
 </script>

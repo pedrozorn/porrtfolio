@@ -4,6 +4,7 @@ import Home from "/src/components/Home.vue";
 import About from "/src/components/Profile.vue";
 import Movie from "/src/components/Movie.vue";
 import News from "/src/components/News.vue";
+import Contact from "/src/components/Contact.vue";
 Vue.use(Router);
 export default new Router({
   routes: [
@@ -26,6 +27,11 @@ export default new Router({
       path: "/news",
       name: "news",
       component: News,
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: Contact,
     },
   ],
   scrollBehavior(to) {

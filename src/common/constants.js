@@ -23,6 +23,10 @@ export default {
             url: '/blog'
         },
         {
+            name: 'Contact',
+            url: '/contact'
+        },
+        {
             name: 'ACCESS',
             url: '/access'
         }
