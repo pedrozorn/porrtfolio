@@ -5,7 +5,7 @@
 export default {
   links: [
     {
-      name: 'lit.link',
+      name: 'niconico',
       link: 'https://lit.link/noraseiron',
       icon: require("@/assets/img/niconico.png"),
     },
