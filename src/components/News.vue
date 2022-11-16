@@ -1,6 +1,9 @@
 <template>
-  <div class="news bg" id="app">
+  <div class="news bg">
     <AppBackgroundHolder :title="title" />
+    <div class="container">
+      <div class="news-center">news</div>
+    </div>
   </div>
 </template>
 <script>
@@ -18,6 +21,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.news-center {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 #direction {
   height: 1000px;
 }

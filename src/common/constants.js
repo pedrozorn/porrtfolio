@@ -19,17 +19,9 @@ export default {
             url: '/news'
         },
         {
-            name: 'BLOG',
-            url: '/blog'
-        },
-        {
             name: 'Contact',
             url: '/contact'
         },
-        {
-            name: 'ACCESS',
-            url: '/access'
-        }
     ],
 
     workItems: [

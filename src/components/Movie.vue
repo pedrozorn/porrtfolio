@@ -2,7 +2,7 @@
   <div class="movie bg">
     <AppBackgroundHolder :title="title" />
     <div class="container">
-      <v-container class="responsive-style">
+      <v-container class="responsive-style" v-col sm="8">
         <iframe
           v-for="movie in movieList"
           :key="movie.name"
