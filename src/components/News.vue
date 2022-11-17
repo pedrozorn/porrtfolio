@@ -4,10 +4,12 @@
     <div class="container">
       <div class="news-center">news</div>
     </div>
+    <Pagination />
   </div>
 </template>
 <script>
 import AppBackgroundHolder from "./AppBackgroundHolder.vue";
+import Pagination from "./Pagination.vue";
 export default {
   data() {
     return {
@@ -17,6 +19,7 @@ export default {
   },
   components: {
     AppBackgroundHolder,
+    Pagination,
   },
 };
 </script>

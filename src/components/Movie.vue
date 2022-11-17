@@ -17,12 +17,13 @@
         ></iframe>
       </v-container>
     </div>
-    <v-pagination v-model="page" :length="3"></v-pagination>
+    <Pagination />
   </div>
 </template>
 
 <script>
 import AppBackgroundHolder from "./AppBackgroundHolder.vue";
+import Pagination from "./Pagination.vue";
 import movie from "../common/movie";
 
 export default {
@@ -35,6 +36,7 @@ export default {
   },
   components: {
     AppBackgroundHolder,
+    Pagination,
   },
 };
 </script>
