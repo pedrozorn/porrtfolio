@@ -58,10 +58,11 @@ export default {
 }
 .contact-center {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #ffffff;
   text-align: center;
   padding-bottom: 50px;
+  margin: 0px;
 }
 
 .hover {

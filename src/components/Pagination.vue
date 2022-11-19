@@ -6,16 +6,18 @@
           <v-list-item-content>
             <v-list-item-title>{{ list.name }}</v-list-item-title>
             <div class="frame-wrapper__video">
-              <iframe
-                width="560"
-                height="315"
-                class="addTagManager"
-                :src="list.url"
-                :title="list.name"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <v-hover close-delay="52" open-delay="64">
+                <iframe
+                  width="560"
+                  height="315"
+                  class="addTagManager"
+                  :src="list.url"
+                  :title="list.name"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </v-hover>
             </div>
           </v-list-item-content>
         </v-list-item>

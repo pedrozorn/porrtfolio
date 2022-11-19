@@ -14,7 +14,6 @@
             </div>
           </v-col>
         </v-row>
-        <AppButton :button-text="buttonText" :url="url" />
       </v-container>
     </section>
   </div>
@@ -39,6 +38,9 @@ export default {
 }
 .home-about__contents-img {
   text-align: center;
+}
+.profile-info {
+  margin-bottom: 60px;
 }
 .profile-name {
   font-weight: 700;

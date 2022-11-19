@@ -18,7 +18,14 @@
         </v-tab>
       </v-tabs>
     </v-app-bar>
-    <v-navigation-drawer class="header-menu" v-model="drawer" fixed temporary>
+    <v-navigation-drawer
+      app
+      dark
+      class="header-menu"
+      v-model="drawer"
+      fixed
+      temporary
+    >
       <v-list nav dense>
         <v-list-item-group>
           <v-list-item
