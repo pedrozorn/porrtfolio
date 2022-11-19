@@ -1,6 +1,8 @@
 <template>
   <v-footer dark color="secondary" absolute>
-    <div class="footer">Copyright xxP 2022. All right reserved</div>
+    <div class="footer">
+      Copyright xxP {{ new Date().getFullYear() }}. All right reserved
+    </div>
   </v-footer>
 </template>
 

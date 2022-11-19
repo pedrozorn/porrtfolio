@@ -1,5 +1,5 @@
 <template>
-  <div class="about bg">
+  <div class="about">
     <AppBackgroundHolder :title="title" />
     <section class="home-about">
       <v-container>

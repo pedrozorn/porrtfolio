@@ -1,14 +1,10 @@
 <template>
-  <div class="pagination">
-    <AppBackgroundHolder :title="title" />
+  <div class="pagination bg">
     <div class="text-center container">
-      <v-container>
-        <div class="movie-area">
-          <div
-            class="col-md-6 col-sm-10 cole"
-            v-for="list in displayLists"
-            :key="list.url"
-          >
+      <v-list>
+        <v-list-item v-for="list in displayLists" :key="list.index">
+          <v-list-item-content class="video-wrapper col-md-4">
+            <v-list-item-title>{{ list.name }}</v-list-item-title>
             <div class="frame-wrapper__video">
               <iframe
                 width="560"
@@ -21,31 +17,29 @@
                 allowfullscreen
               ></iframe>
             </div>
-          </div>
-        </div>
-        <v-pagination
-          v-model="page"
-          :length="length"
-          @input="pageChange"
-        ></v-pagination>
-      </v-container>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+      <v-pagination
+        v-model="page"
+        :length="length"
+        @input="pageChange"
+      ></v-pagination>
     </div>
   </div>
 </template>
 
 <script>
-import AppBackgroundHolder from "./AppBackgroundHolder.vue";
 import pagination from "../common/pagination";
 
 export default {
   data() {
     return {
-      title: "Moive",
       page: 1,
       length: 0,
       lists: [], //全データ
       displayLists: [], //表示データ格納
-      pageSize: 1,
+      pageSize: 2,
     };
   },
   methods: {
@@ -73,20 +67,11 @@ export default {
     console.log(this.displayLists.length)
     // console.log(this.lists)
   },
-  components: {
-    AppBackgroundHolder,
-  }
 };
 </script>
 <style lang="scss" scoped>
 .pagination-link {
   font: 100;
-}
-
-.movie-area {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .video-wrapper {
   display: flex;

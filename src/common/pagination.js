@@ -4,21 +4,19 @@ export default {
   movieList: [
     {
       name: 'haitokushinko',
-      url: 'https://www.youtube.com/embed/UxJLqztCKKU',
-      label: '1',
+      url: 'https://www.youtube-nocookie.com/embed/UxJLqztCKKU',
     },
     {
       name: 'STaRBRiGHT',
-      url: 'https://www.youtube.com/embed/RzHdZB87Hak',
-      label: '2',
+      url: 'https://www.youtube-nocookie.com/embed/RzHdZB87Hak',
     },
     {
       name: 'endlessHall',
-      url: 'https://www.youtube.com/embed/s8xyjQd0x-U'
+      url: 'https://www.youtube-nocookie.com/embed/s8xyjQd0x-U'
     },
     {
       name: 'antihero',
-      url: 'https://www.youtube.com/embed/MTUNfuojCwg'
+      url: 'https://www.youtube-nocookie.com/embed/MTUNfuojCwg'
     },
   ],
 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="home bg">
+  <section class="home">
     <HomeHero></HomeHero>
     <HomeAbout></HomeAbout>
     <HomeWork />

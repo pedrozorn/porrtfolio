@@ -1,22 +1,10 @@
 <template>
-  <div class="pagination bg">
+  <div class="pagination">
     <div class="text-center">
       <v-list>
         <v-list-item v-for="list in displayLists" :key="list.index">
           <v-list-item-content>
             <v-list-item-title>{{ list.name }}</v-list-item-title>
-            <div class="frame-wrapper__video">
-              <iframe
-                width="560"
-                height="315"
-                class="addTagManager"
-                :src="list.url"
-                :title="list.name"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
           </v-list-item-content>
         </v-list-item>
       </v-list>
