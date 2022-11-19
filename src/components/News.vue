@@ -1,5 +1,5 @@
 <template>
-  <div class="news bg">
+  <div class="news">
     <AppBackgroundHolder :title="title" />
     <div class="container">
       <div class="news-center">news</div>

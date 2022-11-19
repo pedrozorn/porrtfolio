@@ -1,5 +1,5 @@
 <template>
-  <div class="pagination bg">
+  <div class="pagination">
     <div class="text-center">
       <v-list>
         <v-list-item v-for="list in displayLists" :key="list.index">

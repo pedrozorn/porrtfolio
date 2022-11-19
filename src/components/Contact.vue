@@ -1,12 +1,12 @@
 <template>
-  <div class="contact bg">
+  <div class="contact">
     <AppBackgroundHolder :title="title" />
     <div class="container">
+      <v-row justify="center" class="v-card__text contact-center">
+        ニコニコ動画、Youtubeなどに動画を投稿しています。<br />
+        お仕事の依頼はTwitterからDMにてご連絡下さい。
+      </v-row>
       <div class="contact-icons row align-content-center">
-        <div class="v-card__text contact-center">
-          ニコニコ動画、Youtubeなどに動画を投稿しています。<br />
-          お仕事の依頼はTwitterからDMにてご連絡下さい。
-        </div>
         <div
           class="contact-icon"
           v-for="website in websites"
@@ -150,6 +150,46 @@ export default {
         opacity: 1;
       }
     }
+  }
+}
+.icon--servive {
+  width: 48px;
+  height: 48px;
+}
+
+.v-window {
+  height: 300px !important;
+  @include display_pc {
+    height: 500px !important;
+  }
+}
+
+.home-service__contents {
+  margin-top: 20px;
+  justify-content: center;
+}
+.home-service__card-title {
+  text-align: center;
+  padding: 20px 10px 10px;
+}
+.home-service__card-img {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-service__card-text {
+  padding: 10px 20px;
+}
+
+.icon--servive {
+  width: 48px;
+  height: 48px;
+}
+
+.v-window {
+  height: 300px !important;
+  @include display_pc {
+    height: 500px !important;
   }
 }
 </style>

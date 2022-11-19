@@ -1,5 +1,5 @@
 <template>
-  <section class="home-hero bg">
+  <section class="home-hero">
     <v-container fluid fill-height class="home_hero__content">
       <v-row>
         <v-col class="home_hero__content-text">
