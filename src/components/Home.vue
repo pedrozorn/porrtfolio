@@ -1,7 +1,7 @@
 <template>
-  <section class="home">
+  <div class="home">
     <HomeHero></HomeHero>
-  </section>
+  </div>
 </template>
 
 <script>

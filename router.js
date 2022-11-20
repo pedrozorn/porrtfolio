@@ -12,26 +12,41 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home,
+      meta: {
+        pageNo: 0,
+      },
     },
     {
       path: "/profile",
       name: "profile",
       component: About,
+      meta: {
+        pageNo: 1,
+      },
     },
     {
       path: "/moive",
       name: "moive",
       component: Movie,
+      meta: {
+        pageNo: 2,
+      },
     },
     {
       path: "/news",
       name: "news",
       component: News,
+      meta: {
+        pageNo: 3,
+      },
     },
     {
       path: "/contact",
       name: "contact",
       component: Contact,
+      meta: {
+        pageNo: 4,
+      },
     },
   ],
   scrollBehavior(to) {

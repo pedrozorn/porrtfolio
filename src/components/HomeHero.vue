@@ -4,6 +4,9 @@
       <v-row>
         <v-col class="home_hero__content-text">
           <p>nora/正論××P website.</p>
+          <div class="animate__animated animate__flash animate__infinite">
+            ダミーテキスト
+          </div>
         </v-col>
       </v-row>
     </v-container>
