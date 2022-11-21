@@ -7,6 +7,7 @@ import News from "/src/components/News.vue";
 import Contact from "/src/components/Contact.vue";
 Vue.use(Router);
 export default new Router({
+  mode: "history",
   routes: [
     {
       path: "/",
