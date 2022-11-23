@@ -6,12 +6,12 @@
         appear
         name="costom-transition"
         :duration="transition.duration"
-        :enter-active-class="transition.enter"
         :enter-class="transition.enter"
         :enter-to-class="transition.enter"
+        :enter-active-class="transition.enter"
+        :leave-class="transition.leave"
+        :leave-to-class="transition.leave"
         :leave-active-class="transition.leave"
-        :v-enter="bg"
-        :v-enter-to="bg"
       >
         <router-view class="bg"></router-view>
       </transition>
@@ -31,16 +31,15 @@ export default {
       // Enter（表示される時）/Leave（消える時）
       if (to.meta.pageNo > from.meta.pageNo) {
         this.transition.enter =
-          "animate__animated  animate__fadeInRight animate__faster";
+          "animate__animated animate__fadeInRight animate__faster animate__delay-2s";
         this.transition.leave =
           "animate__animated animate__fadeOutLeft animate__faster";
       } else {
         this.transition.enter =
-          "animate__animated  animate__fadeInLeft animate__faster";
+          "animate__animated animate__fadeInLeft animate__faster animate__delay-2s";
         this.transition.leave =
           "animate__animated animate__fadeOutRight animate__faster";
       }
-      console.log(this.transition.enter);
     },
   },
   data() {
@@ -48,7 +47,10 @@ export default {
       transition: {
         enter: "",
         leave: "",
-        duration: "{ enter: 1, leave: 1 }",
+        duration: {
+          enter: "600",
+          leave: "500",
+        },
       },
     };
   },

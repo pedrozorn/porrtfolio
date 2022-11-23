@@ -7,16 +7,8 @@ export default {
             url: '/'
         },
         {
-            name: 'Profile',
-            url: '/profile'
-        },
-        {
             name: 'MOVIE',
             url: '/moive'
-        },
-        {
-            name: 'News',
-            url: '/news'
         },
         {
             name: 'Contact',
