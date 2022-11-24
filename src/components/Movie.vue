@@ -9,7 +9,7 @@
             v-for="list in displayLists"
             :key="list.url"
           >
-            <v-card elevation="24" shaped tile>
+            <v-card elevation="23" shaped tile>
               <div class="frame-wrapper__video">
                 <iframe
                   width="560"
