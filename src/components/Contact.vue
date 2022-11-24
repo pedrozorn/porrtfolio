@@ -57,14 +57,17 @@ export default {
   justify-content: space-evenly;
 }
 .contact-center {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.5rem;
   color: #ffffff;
   text-align: center;
   padding-bottom: 50px;
   margin: 0px;
 }
-
+.icon-link {
+  max-width: 5rem;
+  max-height: 5rem;
+}
 .hover {
   position: relative;
   figure {

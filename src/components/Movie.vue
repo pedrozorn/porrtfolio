@@ -9,18 +9,20 @@
             v-for="list in displayLists"
             :key="list.url"
           >
-            <div class="frame-wrapper__video">
-              <iframe
-                width="560"
-                height="315"
-                class="addTagManager"
-                :src="list.url"
-                :title="list.name"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
+            <v-card elevation="24" shaped tile>
+              <div class="frame-wrapper__video">
+                <iframe
+                  width="560"
+                  height="315"
+                  class="addTagManager"
+                  :src="list.url"
+                  :title="list.name"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </v-card>
           </div>
         </div>
         <v-pagination
@@ -45,7 +47,7 @@ export default {
       length: 0,
       lists: [], //全データ
       displayLists: [], //表示データ格納
-      pageSize: 1,
+      pageSize: 2,
     };
   },
   methods: {

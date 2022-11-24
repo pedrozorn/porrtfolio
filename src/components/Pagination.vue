@@ -1,6 +1,18 @@
 <template>
   <div class="pagination">
     <div class="text-center">
+      <v-card v-for="list in displayLists" :key="list.index">
+        <iframe
+          width="560"
+          height="315"
+          class="addTagManager"
+          :src="list.url"
+          :title="list.name"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </v-card>
       <v-list>
         <v-list-item v-for="list in displayLists" :key="list.index">
           <v-list-item-content>
