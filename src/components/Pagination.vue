@@ -59,7 +59,6 @@ export default {
   methods: {
     getNumber: function (number) {
       console.log(number);
-      console.log(test);
     },
     pageChange: function (pageNumber) {
       this.displayLists = this.lists.slice(
