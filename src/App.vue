@@ -4,14 +4,10 @@
     <v-content>
       <transition
         appear
-        name="costom-transition"
+        name="fade"
+        mode="out-in"
         :duration="transition.duration"
-        :enter-class="transition.enter"
-        :enter-to-class="transition.enter"
-        :enter-active-class="transition.enter"
-        :leave-class="transition.leave"
         :leave-to-class="transition.leave"
-        :leave-active-class="transition.leave"
       >
         <router-view class="bg"></router-view>
       </transition>

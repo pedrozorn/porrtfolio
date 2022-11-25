@@ -79,7 +79,6 @@ export default {
     this.length = Math.ceil(this.lists.length / this.pageSize);
     this.displayLists = this.lists.slice(0, this.pageSize);
     console.log(this.displayLists.length)
-    // console.log(this.lists)
   },
 };
 </script>
