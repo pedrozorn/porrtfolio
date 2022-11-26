@@ -1,6 +1,6 @@
 <template>
   <div class="pagination">
-    <div class="text-center">
+    <div class="text-center test">
       <v-card v-for="list in displayLists" :key="list.index">
         <iframe
           width="560"
@@ -83,6 +83,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.pagination {
+  padding-bottom: 30px;
+}
 .pagination-link {
   font: 100;
 }

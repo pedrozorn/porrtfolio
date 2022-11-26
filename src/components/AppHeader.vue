@@ -26,7 +26,7 @@
       fixed
       temporary
     >
-      <v-list nav dense>
+      <v-list classnav dense>
         <v-list-item-group>
           <v-list-item
             v-for="menuItem in menuItems"

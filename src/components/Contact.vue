@@ -63,6 +63,7 @@ export default {
   text-align: center;
   padding-bottom: 50px;
   margin: 0px;
+  line-height: 2.5rem;
 }
 .icon-link {
   max-width: 5rem;

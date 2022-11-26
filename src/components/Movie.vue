@@ -26,6 +26,7 @@
           </div>
         </div>
         <v-pagination
+          class="pagination"
           v-model="page"
           :length="length"
           @input="pageChange"
@@ -111,6 +112,10 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.pagination {
+  padding-bottom:30px;
 }
 
 </style>

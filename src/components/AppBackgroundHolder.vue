@@ -27,7 +27,7 @@ export default {
   &-text {
     color: white;
     text-align: center;
-    font-size: 28px;
+    font-size: 2.5rem;
     font-weight: bold;
 
     @include display_pc {
