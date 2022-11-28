@@ -18,5 +18,11 @@ export default {
       name: 'antihero',
       url: 'https://www.youtube-nocookie.com/embed/MTUNfuojCwg'
     },
+    {
+      name: 'rOndO',
+      url: 'https://www.youtube-nocookie.com/embed/cUzGw-olJdA'
+    },
+
+
   ],
 }
