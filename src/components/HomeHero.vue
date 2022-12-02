@@ -3,7 +3,9 @@
     <v-container fluid fill-height class="home_hero__content">
       <v-row>
         <v-col class="home_hero__content-text">
-          <p>nora/正論××P website</p>
+          <p class="animate__animated animate__fadeInUp animate__slow">
+            nora/正論××P website
+          </p>
         </v-col>
       </v-row>
     </v-container>
