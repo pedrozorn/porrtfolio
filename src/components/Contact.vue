@@ -3,29 +3,10 @@
     <AppBackgroundHolder :title="title" />
     <div class="container">
       <v-row justify="center" class="v-card__text contact-center">
-        ニコニコ動画、Youtubeなどに動画を投稿しています。<br />
-        お仕事の依頼はTwitterからDMにてご連絡下さい。
+        お仕事のご依頼・ご相談は下記メールにてご連絡下さい。
+        <br />
       </v-row>
-      <div class="contact-icons row align-content-center">
-        <div
-          class="contact-icon"
-          v-for="website in websites"
-          :key="website.name"
-        >
-          <a v-bind:href="website.link" class="image_box hover">
-            <figure class="img_wrap">
-              <v-avatar size="100">
-                <img class="icon-link" v-bind:src="website.icon" alt="avatar" />
-                <figcaption class="txt_wrap">
-                  <div class="txt_box">
-                    <p>{{ website.name }}</p>
-                  </div>
-                </figcaption>
-              </v-avatar>
-            </figure>
-          </a>
-        </div>
-      </div>
+      <p class="contact-center">nora.enrs@gmail.com</p>
     </div>
   </div>
 </template>

@@ -2,11 +2,11 @@
   <section class="home-hero">
     <v-container fluid fill-height class="home_hero__content">
       <v-row>
-        <v-col class="home_hero__content-text">
+        <v-coっw class="home_hero__content-text">
           <p class="animate__animated animate__fadeInUp animate__slow">
             nora/正論××P website
           </p>
-        </v-col>
+        </v-coっw
       </v-row>
       <div class="contact-icons row align-content-center">
         <div

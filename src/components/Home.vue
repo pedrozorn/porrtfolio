@@ -6,7 +6,7 @@
 
 <script>
 import HomeHero from "./HomeHero.vue";
-export default {
+export default {  
   components: {
     HomeHero,
   },
