@@ -11,7 +11,7 @@ export default {
             url: '/moive'
         },
         {
-            name: 'Contact',
+            name: 'CONTACT',
             url: '/contact'
         },
     ],
